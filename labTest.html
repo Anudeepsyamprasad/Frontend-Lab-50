@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="labTest.css">
+</head>
+<body>
+    <header><h2>People Pharmacy</h2></header>
+    <nav id="navigation">
+        <ul class="menuList">
+            <li><a href="Pharmacy-page.html">Home</a></li>
+            <li>
+                <a href="#">Our Medicines</a>
+                <ul id="medicines">
+                    <li><a href="">Fever</a></li>
+                    <li><a href="">Muscle Pains</a></li>
+                    <li><a href="">Cold</a></li>
+                    <li><a href="">Cough</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Health Care</a>
+                <ul id="healthcare">
+                    <li><a href="">Baby Care</a></li>
+                    <li><a href="">Skin Care</a></li>
+                    <li><a href="">Home Care</a></li>
+                    <li><a href="">Personal Care </a></li>
+                    <li><a href="">Pet Care </a></li>
+                </ul>
+            </li>
+            <li><a href="labTest.html">Lab Test</a></li>
+
+        </ul>
+    </nav>
+    <section id="labpageBlock">
+        <form action="" id="labForm">
+            <img src="Images/Lab-Test/lab-test.jpg" alt="Lab test Img">
+            <h2>1. Contact Details</h2>
+            <input type="text" title="patientName" placeholder="Full Name" required>
+            <input type="number" title="patientId" placeholder="Patient ID" required>
+            <input type="number" title="phoneNum" placeholder="Patient Phone Number"  min="6000000000" max="9999999999" required>
+            <input type="email" title="email" placeholder="Patient Mail ID" required >
+            <h2>2.Address</h2>
+            <input type="text" title="hNo" placeholder="H/No" required>
+            <input type="text" placeholder="Street" required>
+            <input type="text" placeholder="Area" required>
+            <h4>District:</h4>
+            <select name="District" id="district" required>
+                <option value="">Choose</option>
+                <option value="Anakapalle">Anakapalle</option>
+                <option value="Vizag">Vizag</option>
+                <option value="Maharastra">Maharashtra</option>
+            </select>
+            <h2>3. Select the Tests</h2>
+            <p>(Check atleast one box without fail)</p>
+            <input type="checkbox" name="opt1" id="c1" value="CBC">
+            <label for="c1">CBC</label><br>
+            <input type="checkbox" name="opt2" id="c2" value="Complete Urine">
+            <label for="c2">Complete Urine</label><br>
+            <input type="checkbox" name="opt3" id="c3" value="Lipid Profile">
+            <label for="c3">Lipid Profile</label><br>
+            <input type="checkbox" name="opt4" id="c4" value="Thyroid Stimulating Hormone(TSH)">
+            <label for="c4">Thyroid Stimulating Hormone(TSH)</label><br>
+            <input type="checkbox" name="opt5" id="c5" value="Glucose Test">
+            <label for="c5">Glucose Test</label><br>
+            <h2>4. Do you want a hard copy of the report also?</h2>
+            <input type="radio" name="option" id="c6" value="True" required>
+            <label for="c6">Yes</label>
+            <input type="radio" name="option" id="c7" value="False">
+            <label for="c7">No</label>
+            <h2>5. Select Your Comfortable Date and Time</h2>
+            <input type="date" name="date" required><br>
+            <input type="time" name="time" required>
+
+        </form>
+        <button form="labForm">Reset</button>
+        <button form="labForm">Submit</button>
+    </section>
+    <footer>Copyright - People Pharmacy Limited @2023</footer>
+</body>
+</html>
